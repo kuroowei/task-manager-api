@@ -12,8 +12,25 @@ Demonstrate REST API fundamentals: HTTP methods, status codes, request/response 
 - Git & GitHub (version control)
 
 ## Project Structure
+```
+task-manager-api/
+├── src/
+│   ├── controllers/taskController.js
+│   ├── routes/taskRoutes.js
+│   ├── data/tasks.js
+│   └── middleware/errorHandler.js
+├── app.js
+├── server.js
+├── package.json
+├── .gitignore
+└── postman/Task-Manager-API.postman_collection.json
+```
 
 ## Architecture
+
+```
+Client (Postman) → Routes → Controllers → In-memory data → JSON response
+```
 
 ## Installation
 ```powershell
