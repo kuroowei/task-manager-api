@@ -2,6 +2,13 @@
 
 A beginner-level RESTful API for managing tasks, built with Node.js and Express.js using in-memory storage (no database). Built as a BeTechified capstone group project.
 
+## Live Demo
+Deployed on Render: https://task-manager-api-6orr.onrender.com
+
+Try it: https://task-manager-api-6orr.onrender.com/api/health
+
+Note: this runs on Render's free tier, so the first request after a period of inactivity may take 30-60 seconds while the server wakes up.
+
 ## Objectives
 Demonstrate REST API fundamentals: HTTP methods, status codes, request/response handling, middleware, CRUD operations, input validation, and centralized error handling.
 
@@ -10,8 +17,10 @@ Demonstrate REST API fundamentals: HTTP methods, status codes, request/response 
 - Express.js
 - Postman (testing)
 - Git & GitHub (version control)
+- Render (deployment)
 
 ## Project Structure
+
 ```
 task-manager-api/
 ├── src/
@@ -47,7 +56,8 @@ npm start       # production-style start
 Server runs at http://localhost:3000
 
 ## API Base URL
-`http://localhost:3000/api/tasks`
+- Local: `http://localhost:3000/api/tasks`
+- Live: `https://task-manager-api-6orr.onrender.com/api/tasks`
 
 ## Endpoints
 
@@ -98,10 +108,10 @@ Server runs at http://localhost:3000
 - 500 — unexpected server error
 
 ## Testing with Postman
-Import `postman/Task-Manager-API.postman_collection.json`, set the `baseUrl` collection variable to `http://localhost:3000`, then run requests top to bottom.
+Import `postman/Task-Manager-API.postman_collection.json`, set the `baseUrl` collection variable to `http://localhost:3000` (or the live URL above), then run requests top to bottom.
 
 ## Team Contributions
 See Git history — each member worked from their own `feature/*` branch off `develop`, opened a PR, and merged after review.
 
 ## Future Improvements
-Database persistence, authentication/JWT, search/filter/pagination, due dates, categories, a frontend, automated tests, deployment.
+Database persistence, authentication/JWT, search/filter/pagination, due dates, categories, a frontend, automated tests.
